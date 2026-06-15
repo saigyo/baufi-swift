@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager build output
+.build/
+Package.resolved
+
+# Xcode / SwiftPM user state
+.swiftpm/
+
+# Generated, doppelklickbares App-Bundle (via scripts/make-app.sh)
+BaufiApp.app/
+scripts/BaufiApp.app/
+
+# Icon-Zwischendateien (via scripts/make-icon.swift neu erzeugbar)
+scripts/AppIcon.iconset/
