@@ -14,3 +14,6 @@ scripts/BaufiSwift.app/
 
 # Icon-Zwischendateien (via scripts/make-icon.swift neu erzeugbar)
 scripts/AppIcon.iconset/
+
+# Test-Reports (CI: swift test --xunit-output)
+test-results*.xml
