@@ -6,6 +6,14 @@ voller Funktionsparität. Ziel: Finanzierung ist zum Renteneintritt getilgt bzw.
 auf eine definierte Ziel-Restschuld zurückgeführt (Ablösung z. B. durch eine
 fällige Kapitallebensversicherung).
 
+> [!WARNING]
+> **Keine Finanz-, Anlage- oder Steuerberatung.** Diese App ist ein
+> vereinfachtes Rechenmodell zu Bildungs- und Vergleichszwecken. Die Ergebnisse
+> sind Schätzungen und können von realen Angeboten erheblich abweichen. Triff
+> keine finanziellen Entscheidungen allein auf dieser Grundlage – ziehe eine
+> qualifizierte, unabhängige Beratung hinzu. Nutzung auf eigenes Risiko, ohne
+> Gewähr (siehe [Lizenz](#lizenz)).
+
 ## Features
 
 - **Modellvergleich** von sechs Modellen: Annuität 10/15/20 J. (mit
@@ -95,7 +103,8 @@ wird auf wenige Euro genau getroffen statt exakt – ein Cross-Check gegen das
 JS-Original zeigt Abweichungen von ≤ 1 €. Die Invarianten-Tests verwenden
 entsprechend eine Cent-Toleranz.
 
-## Hinweis
+## Lizenz
 
-Vereinfachtes Rechenmodell (Details im UI-Footer). Dies ist eine Simulation und
-keine Finanz- oder Anlageberatung.
+[MIT](LICENSE) © 2026 Markus Ackermann. Die Software wird „wie besehen", ohne
+jegliche Gewährleistung bereitgestellt. Vereinfachtes Rechenmodell (Details im
+UI-Footer) – siehe den Haftungsausschluss oben.
