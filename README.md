@@ -1,5 +1,7 @@
 # BaufiSwift
 
+[![CI](https://github.com/saigyo/baufi-swift/actions/workflows/ci.yml/badge.svg)](https://github.com/saigyo/baufi-swift/actions/workflows/ci.yml)
+
 Native macOS-App (SwiftUI) zum Vergleich von Baufinanzierungsmodellen – Port der
 React-Web-App [`baufinanzierung-simulator`](https://github.com/saigyo/baufinanzierungs-simulator) mit
 voller Funktionsparität. Ziel: Finanzierung ist zum Renteneintritt getilgt bzw.
