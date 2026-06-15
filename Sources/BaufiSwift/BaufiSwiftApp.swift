@@ -48,7 +48,13 @@ struct BaufiSwiftApp: App {
         para.alignment = .center
         para.lineSpacing = 2
 
-        let credits = NSAttributedString(
+        let base: [NSAttributedString.Key: Any] = [
+            .font: NSFont.systemFont(ofSize: 11),
+            .foregroundColor: NSColor.labelColor,
+            .paragraphStyle: para,
+        ]
+
+        let credits = NSMutableAttributedString(
             string: """
             Vergleich von Baufinanzierungsmodellen – nativer macOS-Port des \
             Baufinanzierungs-Simulators.
@@ -56,14 +62,22 @@ struct BaufiSwiftApp: App {
             MIT-Lizenz – Open Source. Bereitgestellt „wie besehen“, ohne Gewähr. \
             Keine Finanz-, Anlage- oder Steuerberatung.
 
-            github.com/saigyo/baufinanzierungs-simulator
+
             """,
-            attributes: [
-                .font: NSFont.systemFont(ofSize: 11),
-                .foregroundColor: NSColor.labelColor,
-                .paragraphStyle: para,
-            ]
+            attributes: base
         )
+
+        func appendLink(_ label: String, _ url: String, trailingNewline: Bool = true) {
+            let link = NSMutableAttributedString(string: label, attributes: base)
+            link.addAttribute(.link, value: URL(string: url)!,
+                              range: NSRange(location: 0, length: link.length))
+            credits.append(link)
+            if trailingNewline { credits.append(NSAttributedString(string: "\n", attributes: base)) }
+        }
+
+        appendLink("Projektseite auf GitHub", "https://github.com/saigyo/baufi-swift")
+        appendLink("Basiert auf: baufinanzierungs-simulator",
+                   "https://github.com/saigyo/baufinanzierungs-simulator", trailingNewline: false)
 
         NSApp.orderFrontStandardAboutPanel(options: [
             .credits: credits,
