@@ -1,4 +1,4 @@
-# BaufiApp — native macOS-Port des Baufinanzierungs-Simulators
+# BaufiSwift — native macOS-Port des Baufinanzierungs-Simulators
 
 Datum: 2026-06-14
 
@@ -29,7 +29,7 @@ Swift Package mit getrennten Targets (Logik UI-frei und testbar, analog `src/lib
 
 - **`BaufiCore`** (library): `Finance`, `Calc`, `Constants`, `Formatting`,
   `AppState`, `Persistence` — keine UI-Abhängigkeit.
-- **`BaufiApp`** (executable, SwiftUI App): `ContentView` (Orchestrator),
+- **`BaufiSwift`** (executable, SwiftUI App): `ContentView` (Orchestrator),
   `Views/` (InputPanel, ModelTable, ComparisonCharts, MaxPriceSection, Footer),
   `Controls`, `Theme` (Farben).
 - **`BaufiCoreTests`**: portierte Invarianten-Tests aus `finance.test.js` /

@@ -1,4 +1,4 @@
-# BaufiApp
+# BaufiSwift
 
 Native macOS-App (SwiftUI) zum Vergleich von Baufinanzierungsmodellen – Port der
 React-Web-App [`baufinanzierung-simulator`](https://github.com/saigyo/baufinanzierungs-simulator) mit
@@ -36,11 +36,11 @@ Voraussetzung: macOS 14+, Xcode 16+ / Swift 6.
 
 ```bash
 swift build              # Debug-Build
-swift run BaufiApp       # App starten (Dock-Icon + Fenster via AppDelegate)
+swift run BaufiSwift     # App starten (Dock-Icon + Fenster via AppDelegate)
 swift test               # Unit-Tests (Finanzmathematik + Persistenz)
 ```
 
-In Xcode: `Package.swift` öffnen, Schema **BaufiApp** wählen und ausführen (⌘R).
+In Xcode: `Package.swift` öffnen, Schema **BaufiSwift** wählen und ausführen (⌘R).
 
 ### Echtes App-Bundle
 
@@ -48,8 +48,8 @@ Ein SwiftPM-Executable ist nur ein nacktes Binary. Für eine doppelklickbare
 native App mit Dock-Icon wird es in ein `.app`-Bundle mit `Info.plist` verpackt:
 
 ```bash
-scripts/make-app.sh          # erzeugt ./BaufiApp.app (Release, ad-hoc signiert, inkl. Icon)
-open BaufiApp.app            # starten – oder im Finder doppelklicken
+scripts/make-app.sh          # erzeugt ./BaufiSwift.app (Release, ad-hoc signiert, inkl. Icon)
+open BaufiSwift.app          # starten – oder im Finder doppelklicken
 ```
 
 ### App-Icon
@@ -86,7 +86,7 @@ testbar (analog zu `src/lib/` im Original):
   - `Calc.swift` – `computeCalc` (Modellvergleich) und `computeInvers` (Umkehr-Modus).
   - `AppData.swift` – Eingabe-Datentypen und `Defaults`.
   - `Persistence.swift` – Auto-Speichern + Teil-Code (Codable, Base64).
-- `Sources/BaufiApp/` – SwiftUI: `BaufiAppApp` (Menü, Fenster), `AppState`
+- `Sources/BaufiSwift/` – SwiftUI: `BaufiSwiftApp` (Menü, Fenster), `AppState`
   (`@Observable`), `ContentView` (Orchestrator), `Views/` (InputPanel,
   ComparisonCharts, ModelTable, MaxPriceSection, Footer), `Controls`, `Theme`,
   `Components`.

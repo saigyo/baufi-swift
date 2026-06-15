@@ -15,7 +15,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 @main
-struct BaufiAppApp: App {
+struct BaufiSwiftApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @State private var state = AppState()
 

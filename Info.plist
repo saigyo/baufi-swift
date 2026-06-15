@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>BaufiApp</string>
+    <string>BaufiSwift</string>
     <key>CFBundleDisplayName</key>
     <string>Baufinanzierungs-Simulator</string>
     <key>CFBundleIdentifier</key>
-    <string>de.baufi.BaufiApp</string>
+    <string>de.baufi.BaufiSwift</string>
     <key>CFBundleExecutable</key>
-    <string>BaufiApp</string>
+    <string>BaufiSwift</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundlePackageType</key>

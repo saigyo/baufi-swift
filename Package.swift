@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "BaufiApp",
+    name: "BaufiSwift",
     platforms: [.macOS(.v14)],
     targets: [
         .target(name: "BaufiCore"),
         .executableTarget(
-            name: "BaufiApp",
+            name: "BaufiSwift",
             dependencies: ["BaufiCore"]
         ),
         .testTarget(
