@@ -30,6 +30,23 @@ fällige Kapitallebensversicherung).
 - **Persistenz**: Auto-Speichern (UserDefaults) + Szenario-Teil-Code
   (Base64-JSON über die Zwischenablage, `⌘⇧C` / `⌘⇧V`).
 
+## Screenshots
+
+**Modellvergleich** – Empfehlung, Kennzahlen und Restschuldverlauf bis zur Rente
+(mit Mouse-Over-Werten je Modell):
+
+![Modellvergleich mit Empfehlung und Restschuld-Diagramm](docs/screenshots/modellvergleich.png)
+
+**Belastungsquote über die Laufzeit** und die vollständige Modell-Tabelle
+(Sollzins, Rate Start/später, Belastungsspitze, Zinskosten):
+
+![Belastungsquote-Diagramm und Modellvergleichstabelle](docs/screenshots/belastungsquote.png)
+
+**Umkehr-Modus** – maximaler Kaufpreis je Modell und Belastungsgrenze
+(„Was kann ich mir leisten?"):
+
+![Maximaler Kaufpreis nach Modell](docs/screenshots/maximaler-kaufpreis.png)
+
 ## Bauen & Starten
 
 Voraussetzung: macOS 14+, Xcode 16+ / Swift 6.
